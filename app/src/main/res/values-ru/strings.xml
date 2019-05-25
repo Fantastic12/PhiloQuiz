@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" >Философская Викторина</string>
+    <string name="question" >Вопрос</string>
+    <string name="play_again" >Начать заново</string>
+    <string name="correct" >Правильно</string>
+    <string name="wrongans" >Упс, ответ был неправилный</string>
+    <string name="timeup" >Время закончилось</string>
+    <string name="play_game" >Начать игру</string>
+    <string name="quit" >Выход</string>
+    <string name="next" >Далее</string>
+    <string name="return_the_main_menu">Вернутся в главное меню</string>
+    <string name="score">Рекорд:</string>
+</resources>

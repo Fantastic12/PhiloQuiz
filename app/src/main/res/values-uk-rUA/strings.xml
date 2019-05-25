@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Філософська Вікторина</string>
+    <string name="correct">Правильно</string>
+    <string name="next">Далі</string>
+    <string name="play_again">Почати спочатку</string>
+    <string name="play_game">Почати гру</string>
+    <string name="question">Питтання</string>
+    <string name="quit">Вихід</string>
+    <string name="return_the_main_menu">Вихід в головне меню</string>
+    <string name="score">Рекорд:</string>
+    <string name="timeup">Час закінчився</string>
+    <string name="wrongans">Упс, відповідь була неправильною</string>
+</resources>
