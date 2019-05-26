@@ -13,7 +13,6 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_add_my_question.*
 import android.view.View
 
-
 class AddMyQuestionActivity : AppCompatActivity() {
 
     private var db : LocalDB? = null
