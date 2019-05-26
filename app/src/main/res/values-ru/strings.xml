@@ -11,4 +11,16 @@
     <string name="next" >Далее</string>
     <string name="return_the_main_menu">Вернутся в главное меню</string>
     <string name="score">Рекорд:</string>
+    <string name="please_enter_all_field">Пожалуйста введите все поля</string>
+    <string name="score_main">Рекорд</string>
+    <string name="add_your_question">Добавить свой вопрос</string>
+    <string name="answer_c">Ответ C</string>
+    <string name="answer_b">Ответ B</string>
+    <string name="answer_a">Ответ A</string>
+    <string name="please_enter_your_answers_options_to_your_question">Пожалуйста введите ваши варианты ответов для вашего вопроса</string>
+    <string name="please_enter_your_question">Пожалуйста введите свой вопрос</string>
+    <string name="your_question">Ваш вопрос</string>
+    <string name="answer_d">Ответ D</string>
+    <string name="add">Добавить</string>
+    <string name="please_select_the_correct_answer">Пожалуйста выбирете правильный ответ</string>
 </resources>

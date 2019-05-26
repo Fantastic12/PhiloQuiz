@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
+    android:background="@color/colorPrimaryDark"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -61,8 +61,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:text="@string/play_again"
-        fbutton:buttonColor="@color/lightGreen" />
+        android:text="@string/play_again" />
 
     <Button
         android:id="@+id/retutn_button"

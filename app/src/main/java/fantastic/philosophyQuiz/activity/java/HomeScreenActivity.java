@@ -7,16 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import fantastic.philosophyQuiz.activity.kotlin.AddMyQuestionActivity;
 import info.hoang8f.widget.FButton;
 import fantastic.philosophyQuiz.MainGameActivity;
 import fantastic.philosophyQuiz.R;
-
 import fantastic.philosophyQuiz.interfaces.Activity;
 import fantastic.philosophyQuiz.utils.LocaleHelper;
 
 public class HomeScreenActivity extends AppCompatActivity implements Activity {
 
-    FButton playGame,quit;
+    FButton playGame,score,addQuestion,quit;
     TextView tQ;
     ImageView changeLanguage;
 
@@ -36,6 +37,13 @@ public class HomeScreenActivity extends AppCompatActivity implements Activity {
         playGame.setTypeface(typeface);
         quit.setTypeface(typeface);
         tQ.setTypeface(typeface);
+        score.setTypeface(typeface);
+        addQuestion.setTypeface(typeface);
+
+        score.setButtonColor(R.color.red);
+        playGame.setButtonColor(R.color.red);
+        quit.setButtonColor(R.color.red);
+        addQuestion.setButtonColor(R.color.red);
     }
 
     @Override
@@ -44,6 +52,8 @@ public class HomeScreenActivity extends AppCompatActivity implements Activity {
         quit =  findViewById(R.id.quit);
         tQ = findViewById(R.id.tQ);
         changeLanguage = findViewById(R.id.changeLanguage);
+        addQuestion = findViewById(R.id.add_question_button);
+        score = findViewById(R.id.score_button);
     }
 
     @Override
@@ -83,6 +93,13 @@ public class HomeScreenActivity extends AppCompatActivity implements Activity {
                 }
             }
         });
+        addQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AddMyQuestionActivity.class));
+            }
+        });
     }
+
 
 }

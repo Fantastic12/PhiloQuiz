@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name="fantastic.philosophyQuiz.activity.java.HomeScreenActivity"
+        <activity android:name=".activity.kotlin.AddMyQuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.java.HomeScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,15 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="fantastic.philosophyQuiz.activity.java.PlayAgainActivity"
+        <activity
+            android:name=".activity.java.PlayAgainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.kotlin.GameWonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.kotlin.TimeUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainGameActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name="fantastic.philosophyQuiz.activity.kotlin.GameWonActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="fantastic.philosophyQuiz.activity.kotlin.TimeUpActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="fantastic.philosophyQuiz.MainGameActivity"
-            android:screenOrientation="portrait">
-        </activity>
     </application>
 
 </manifest>

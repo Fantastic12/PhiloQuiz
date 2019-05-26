@@ -22,7 +22,6 @@ import fantastic.philosophyQuiz.activity.kotlin.GameWonActivity;
 import fantastic.philosophyQuiz.activity.kotlin.TimeUpActivity;
 import fantastic.philosophyQuiz.interfaces.Activity;
 
-
 public class MainGameActivity extends AppCompatActivity implements Activity {
     FButton buttonA, buttonB, buttonC, buttonD;
     TextView questionText, triviaQuizText, timeText, resultText, coinText;
@@ -30,7 +29,7 @@ public class MainGameActivity extends AppCompatActivity implements Activity {
     Question question;
     List<Question> list;
     int qid = 0;
-    int timeValue = 20;
+    int timeValue = 21;
     int coinValue = 0;
     CountDownTimer countDownTimer;
     Typeface tb, sb;
@@ -92,7 +91,7 @@ public class MainGameActivity extends AppCompatActivity implements Activity {
 
     //countDownTimer
     private void initTimer(){
-        countDownTimer = new CountDownTimer(22000, 1000) {
+        countDownTimer = new CountDownTimer(21000, 1000) {
             public void onTick(long millisUntilFinished) {
 
                 //here you can have your logic to set text to timeText

@@ -123,9 +123,7 @@ class QuizHelper extends SQLiteOpenHelper {
                 "Фалес", "Эпикур", "Платон", "Сократ", "Сократ"));
 
         this.addAllQuestions(arraylist);
-
     }
-
 
     private void addAllQuestions(ArrayList<Question> allQuestions) {
         SQLiteDatabase db = this.getWritableDatabase();

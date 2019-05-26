@@ -7,7 +7,6 @@ import fantastic.philosophyQuiz.MainGameActivity
 import fantastic.philosophyQuiz.R
 import kotlinx.android.synthetic.main.game_won.*
 
-
 class GameWonActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +16,7 @@ class GameWonActivity : Activity() {
         playAgain()
     }
 
-    //This is onclick listener for button
-    //it will navigate from this activity to MainGameActivity
-    fun playAgain() {
+    private fun playAgain() {
         playAgainButton1.setOnClickListener {
             val intent = Intent(this@GameWonActivity, MainGameActivity::class.java)
             startActivity(intent)
