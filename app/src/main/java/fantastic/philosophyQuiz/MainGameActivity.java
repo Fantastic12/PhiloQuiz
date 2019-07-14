@@ -14,15 +14,14 @@ import android.view.Window;
 import android.widget.TextView;
 import java.util.Collections;
 import java.util.List;
-import fantastic.philosophyQuiz.activity.java.HomeScreenActivity;
-import fantastic.philosophyQuiz.activity.java.PlayAgainActivity;
+import fantastic.philosophyQuiz.activities.HomeScreenActivity;
+import fantastic.philosophyQuiz.activities.PlayAgainActivity;
 import fantastic.philosophyQuiz.objects.Question;
 import info.hoang8f.widget.FButton;
-import fantastic.philosophyQuiz.activity.kotlin.GameWonActivity;
-import fantastic.philosophyQuiz.activity.kotlin.TimeUpActivity;
-import fantastic.philosophyQuiz.interfaces.Activity;
+import fantastic.philosophyQuiz.activities.GameWonActivity;
+import fantastic.philosophyQuiz.activities.TimeUpActivity;
 
-public class MainGameActivity extends AppCompatActivity implements Activity {
+public class MainGameActivity extends AppCompatActivity {
     FButton buttonA, buttonB, buttonC, buttonD;
     TextView questionText, triviaQuizText, timeText, resultText, coinText;
     QuizHelper quizHelper;
@@ -39,9 +38,7 @@ public class MainGameActivity extends AppCompatActivity implements Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_main);
 
-        findByViewId();
-        onListener();
-
+        initResources();
         initFonts();
         initLocalDB();
         initTimer();
@@ -119,8 +116,7 @@ public class MainGameActivity extends AppCompatActivity implements Activity {
         }.start();
     }
 
-    @Override
-    public void findByViewId() {
+    public void initResources() {
         questionText = findViewById(R.id.triviaQuestion);
         buttonA = findViewById(R.id.buttonA);
         buttonB = findViewById(R.id.buttonB);
@@ -130,11 +126,6 @@ public class MainGameActivity extends AppCompatActivity implements Activity {
         timeText = findViewById(R.id.timeText);
         resultText = findViewById(R.id.resultText);
         coinText = findViewById(R.id.coinText);
-    }
-
-    @Override
-    public void onListener() {
-
     }
 
     public void updateQueAndOptions() {

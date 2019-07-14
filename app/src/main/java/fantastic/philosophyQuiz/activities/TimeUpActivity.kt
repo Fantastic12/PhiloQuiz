@@ -1,4 +1,4 @@
-package fantastic.philosophyQuiz.activity.kotlin
+package fantastic.philosophyQuiz.activities
 
 import android.content.Intent
 import android.graphics.Typeface
@@ -7,7 +7,6 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_time__up.*
 import fantastic.philosophyQuiz.MainGameActivity
 import fantastic.philosophyQuiz.R
-import fantastic.philosophyQuiz.activity.java.HomeScreenActivity
 
 class TimeUpActivity : AppCompatActivity() {
 

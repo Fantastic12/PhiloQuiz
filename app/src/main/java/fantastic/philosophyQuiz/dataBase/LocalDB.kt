@@ -4,8 +4,6 @@ import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
-import fantastic.philosophyQuiz.dataBase.dao.MyQuestionDao
-import fantastic.philosophyQuiz.dataBase.entity.MyQuestion
 
 @Database(entities = [MyQuestion::class], version = 1, exportSchema = false)
 abstract class LocalDB : RoomDatabase() {

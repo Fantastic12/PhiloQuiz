@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".activity.kotlin.AddMyQuestionActivity"
+        <activity android:name=".activities.AddMyQuestionActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.java.HomeScreenActivity"
+            android:name=".activities.HomeScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,13 +22,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.java.PlayAgainActivity"
+            android:name=".activities.PlayAgainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.kotlin.GameWonActivity"
+            android:name=".activities.GameWonActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.kotlin.TimeUpActivity"
+            android:name=".activities.TimeUpActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainGameActivity"

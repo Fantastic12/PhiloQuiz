@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/colorPrimaryDark"
-    tools:context="fantastic.philosophyQuiz.activity.java.HomeScreenActivity">
+    tools:context="fantastic.philosophyQuiz.activities.HomeScreenActivity">
 
     <TextView
         android:id="@+id/tQ"

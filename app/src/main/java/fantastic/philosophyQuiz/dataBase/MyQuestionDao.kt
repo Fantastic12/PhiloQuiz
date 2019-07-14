@@ -1,8 +1,7 @@
-package fantastic.philosophyQuiz.dataBase.dao
+package fantastic.philosophyQuiz.dataBase
 
 import android.arch.persistence.room.*
 import android.arch.persistence.room.OnConflictStrategy.REPLACE
-import fantastic.philosophyQuiz.dataBase.entity.MyQuestion
 
 @Dao
 interface MyQuestionDao {

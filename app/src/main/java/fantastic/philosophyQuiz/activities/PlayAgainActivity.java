@@ -1,9 +1,9 @@
-package fantastic.philosophyQuiz.activity.java;
+package fantastic.philosophyQuiz.activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import fantastic.philosophyQuiz.MainGameActivity;
 import fantastic.philosophyQuiz.R;
 
-public class PlayAgainActivity extends Activity implements fantastic.philosophyQuiz.interfaces.Activity {
+public class PlayAgainActivity extends AppCompatActivity {
 
     Button playAgain;
     TextView wrongAnsText;
@@ -23,11 +23,13 @@ public class PlayAgainActivity extends Activity implements fantastic.philosophyQ
         super.onCreate(savedInstanceState);
         setContentView(R.layout.play_again);
 
-        findByViewId();
+        initResources();
+        initListeners();
         setDataScore();
-        onListener();
+        initTypeFace();
+    }
 
-        //Setting typefaces for textview and button - this will give stylish fonts on textview and button
+    private void initTypeFace(){
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/shablagooital.ttf");
         playAgain.setTypeface(typeface);
         wrongAnsText.setTypeface(typeface);
@@ -41,20 +43,16 @@ public class PlayAgainActivity extends Activity implements fantastic.philosophyQ
     }
 
     @Override
-    public void onBackPressed() {
-        finish();
-    }
+    public void onBackPressed() { finish(); }
 
-    @Override
-    public void findByViewId() {
+    public void initResources() {
         playAgain = findViewById(R.id.playAgainButton);
         wrongAnsText = findViewById(R.id.wrongAns);
         returnButton = findViewById(R.id.retutn_button);
         score = findViewById(R.id.score);
     }
 
-    @Override
-    public void onListener() {
+    public void initListeners() {
         playAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +61,6 @@ public class PlayAgainActivity extends Activity implements fantastic.philosophyQ
                 finish();
             }
         });
-
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,4 +1,4 @@
-package fantastic.philosophyQuiz.dataBase.entity
+package fantastic.philosophyQuiz.dataBase
 
 import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity

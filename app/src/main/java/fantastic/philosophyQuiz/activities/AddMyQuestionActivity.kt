@@ -1,12 +1,12 @@
-package fantastic.philosophyQuiz.activity.kotlin
+package fantastic.philosophyQuiz.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import fantastic.philosophyQuiz.R
 import fantastic.philosophyQuiz.dataBase.LocalDB
-import fantastic.philosophyQuiz.dataBase.dao.MyQuestionDao
-import fantastic.philosophyQuiz.dataBase.entity.MyQuestion
+import fantastic.philosophyQuiz.dataBase.MyQuestionDao
+import fantastic.philosophyQuiz.dataBase.MyQuestion
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -42,7 +42,7 @@ class AddMyQuestionActivity : AppCompatActivity() {
         answer_B.text.toString()
         answer_C.text.toString()
         answer_D.text.toString()
-        val myQuestion = MyQuestion(1,
+        MyQuestion(1,
                 question.text.toString(),
                 answer_A.text.toString(),
                 answer_B.text.toString(),

@@ -1,4 +1,4 @@
-package fantastic.philosophyQuiz.activity.kotlin
+package fantastic.philosophyQuiz.activities
 
 import android.app.Activity
 import android.content.Intent
